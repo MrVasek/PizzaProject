@@ -13,8 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-
 public class Main extends AppCompatActivity {
+
 
     private TextView price;
     private RadioGroup group;
@@ -46,7 +46,7 @@ public class Main extends AppCompatActivity {
         price = (TextView) findViewById(R.id.sum);
         order = (Button) findViewById(R.id.order);
 
-        final SparseIntArray pizzaPrices = new SparseIntArray(4);
+        final SparseIntArray pizzaPrices = new SparseIntArray(6);
         pizzaPrices.put(R.id.choice1, 50);
         pizzaPrices.put(R.id.choice2, 65);
         pizzaPrices.put(R.id.choice3, 45);
@@ -116,18 +116,18 @@ public class Main extends AppCompatActivity {
             finalPrice += 7;
         }
         if (extraPaprica) {
-            finalPrice += 8;
+            finalPrice += 7;
         }
         if (extraMushrooms) {
-            finalPrice += 9;
+            finalPrice += 7;
         }
         if (extraBacon) {
             finalPrice += 10;
         }
         if (extraBroccoli) {
-            finalPrice += 11;
+            finalPrice += 6;
         }
 
-        price.setText("Сума: " + finalPrice + " грн.");
+        price.setText("Сума: " + finalPrice + "грн.");
     }
 }

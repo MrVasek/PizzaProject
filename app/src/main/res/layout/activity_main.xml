@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context="com.example.admin.pizza.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <RadioGroup
             android:id="@+id/pizza_choice"
-            android:layout_width="425dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
 
@@ -20,120 +22,121 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Назва піц"
-                android:textSize="25pt"
-                android:textColor="#0a0808"/>
+                android:textColor="#0a0808"
+                android:textSize="30sp" />
 
             <RadioButton
                 android:id="@+id/choice1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Чотири сезони 50грн"
-                android:textSize="15pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/choice2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="М'ясолюб 65грн"
-                android:textSize="15pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/choice3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Папероні 45грн"
-                android:textSize="15pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/choice4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Антикризова 50грн"
-                android:textSize="15pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/choice5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Сімейна 100грн"
-                android:textSize="15pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="20sp" />
 
-           <RadioButton
+            <RadioButton
                 android:id="@+id/choice6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Вегетиріанська 35грн"
-                android:textSize="15pt"
-               android:textColor="#fff200"/>
+                android:text="Вегетаріанська 35грн"
+                android:textColor="#ff5e00"
+                android:textSize="20sp" />
 
+        </RadioGroup>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Добавки до піци"
                 android:textColor="#0a0808"
-                android:textSize="20pt" />
+                android:textSize="25sp" />
+
 
             <CheckBox
                 android:id="@+id/top_corn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Кукурудза 7грн"
-                android:textSize="10pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/top_paprica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Болгрський перець 7грн"
-                android:textSize="10pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/top_mushrooms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Гриби 7грн"
-                android:textSize="10pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/top_bacon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Бекон 10грн"
-                android:textSize="10pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/top_broccoli"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Броколі 6грн"
-                android:textSize="10pt"
-                android:textColor="#fff200"/>
+                android:textColor="#ff5e00"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/sum"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Сума: 0 грн" />
+                android:textColor="#ff5e00"
+                android:text="Сума: 0 грн"
+                android:textSize="25sp"/>
 
             <Button
                 android:id="@+id/order"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Замовити"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"
+                android:text="Замовити" />
 
-
-        </RadioGroup>
 
     </LinearLayout>
 
